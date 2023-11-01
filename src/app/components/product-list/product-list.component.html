@@ -1,0 +1,10 @@
+<h2>Product List</h2>
+
+<div class="grid">
+  <div class="card" *ngFor="let product of products$ | async">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <a [routerLink]="[product.id]" class="btn btn-primary">Detalhes</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<h2>Product Detail</h2>
+
+<a [routerLink]="['..']">Voltar</a>
+
+<div class="card" *ngIf="product$ | async as product">
+  <img src="assets/coffee.png" class="card-img-top" alt="coffee image" />
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <p class="card-text">{{ product.price | currency }}</p>
+    <button type="button" class="btn btn-primary" (click)="addToCart(product)">
+      Comprar
+    </button>
+  </div>
+</div>

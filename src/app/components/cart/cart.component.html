@@ -1,0 +1,10 @@
+<h2>Cart</h2>
+<a [routerLink]="['..', 'products']">Voltar</a>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let product of order.products">
+    {{ product.name }} - {{ product.price | currency }}
+  </li>
+</ul>
+<button type="button" class="btn btn-primary" (click)="submitOrder()">
+  Finalizar
+</button>
