@@ -1,4 +1,4 @@
-# FAM Minicurso Fullstack JS: Parte I - Backend com NestJS (30/10/2023)
+# FAM Minicurso Fullstack JS: Parte II - Frontendend com Angular (30/10/2023)
 
 ![Imgur](https://i.imgur.com/BkdBxI8.png)
 
